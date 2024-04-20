@@ -3,7 +3,7 @@ import logo from '@/assets/images/logo/gamersParadiseLogo.png';
 import Image from 'next/image';
 import NavLinks from './NavLinks';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button/button';
 const Navbar = () => {
     return (
         <div className='py-4'>
