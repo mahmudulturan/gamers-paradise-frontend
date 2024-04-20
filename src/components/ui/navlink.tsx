@@ -1,17 +1,14 @@
 "use client"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { LinkHTMLAttributes } from "react";
-import { Button } from "./button";
+import React from "react";
 
 export interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     href: string;
     children: React.ReactNode;
-    active: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
-    other: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link";
 }
 
-const NavLink = ({ href, children, active, other, ...props }: NavLinkProps) => {
+const NavLink = ({ href, children, ...props }: NavLinkProps) => {
     const pathname = usePathname();
     return (
         <Link className="uppercase font-semibold hover:text-textCol duration-300 flex flex-col group relative" href={href} {...props}>

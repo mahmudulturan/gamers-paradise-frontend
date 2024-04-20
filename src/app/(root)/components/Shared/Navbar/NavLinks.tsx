@@ -13,7 +13,7 @@ const NavLinks = () => {
     return (
         <div className='flex gap-5'>
             {
-                navbarRoutes.map((route, indx) => <NavLink key={indx} other='ghost' active='default' href={route.path}>{route.name}</NavLink>)
+                navbarRoutes.map((route, indx) => <NavLink key={indx} href={route.path}>{route.name}</NavLink>)
             }
         </div>
     );
