@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/Button/button';
 const Navbar = () => {
     return (
-        <div className='py-4'>
+        <div className='py-4 header-bg shadow-xl'>
             <div className='wrapper flex items-center justify-between'>
                 <div>
                     <Link href={'/'}>
