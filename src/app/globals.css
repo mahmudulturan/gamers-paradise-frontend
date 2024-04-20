@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 
-body {
+* {
   color: #FFFFFF;
   background-color: #090E37;
   background-image: url("../assets/images/background/body-bg.png");
@@ -11,4 +11,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+
+@layer utilities {
+  .wrapper {
+    @apply max-w-7xl mx-auto px-2 lg:px-0
+  }
 }
