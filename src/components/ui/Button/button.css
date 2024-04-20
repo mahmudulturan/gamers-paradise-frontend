@@ -1,20 +1,11 @@
 .btn {
-    background-color: red;
-    color: white;
-    border-radius: 8em;
-    font-size: 17px;
-    font-weight: 600;
-    cursor: pointer;
-    text-transform: uppercase;
     transition: all 0.3s ease-in-out;
-    box-shadow: 2px 5px 0 0 white;
+    box-shadow: 5px 5px 0 0 white;
 }
 
 .btn:hover {
-    background-color: white;
-    color: red;
     transform: translateY(4px) translateX(2px);
-    box-shadow: -3px -5px 0 0 red;
+    box-shadow: -5px -5px 0 0 #FF0052;
 }
 
 
