@@ -4,13 +4,15 @@ import logo from '@/assets/images/logo/gamersParadiseLogo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa6";
+import { Input } from '@/components/ui/Input/input';
+import { Button } from '@/components/ui/Button/button';
 
 const Footer = () => {
     return (
         <footer className='footer-bg'>
             <section className='min-h-[40vh] wrapper flex items-center justify-between gap-6 py-12'>
                 {/* footer logo start*/}
-                <div>
+                <div className='flex-1'>
                     <Link href={'/'}>
                         <Image className='w-24 md:w-32' src={logo} alt='logo of gamers paradise' />
                     </Link>
@@ -29,13 +31,19 @@ const Footer = () => {
                 </div>
 
                 {/* suggestions section start*/}
-                <div>
+                <div className='flex-1'>
 
                 </div>
 
                 {/* newsletter section start */}
-                <div>
-
+                <div className='flex-1 gap-4 space-y-4'>
+                    <h4 className='uppercase font-bold text-2xl'>Our NewsLetter</h4>
+                    <p>
+                        Esports Excellence, Empowered by Passionate Community Leaders Worldwide.
+                    </p>
+                    <Input placeholder='Your Name' className='w-full' />
+                    <Input placeholder='Your Email' className='w-full' />
+                    <Button className='py-6 my-4' variant={"secondary"}>Send Message</Button>
                 </div>
             </section>
             <section className='bg-seconderyCol py-8'>
