@@ -55,7 +55,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={`sticky py-4 shadow-xl top-0 w-full z-40 duration-300 ${(prevPosition <= 50) ? "header-bg" : "bg-seconderyCol"} ${isScrolling || (prevPosition <= 50) ? "" : " -translate-y-full"}`}>
+        <div className={`sticky py-4 shadow-xl top-0 w-full z-40 duration-300 ${(prevPosition <= 50) ? "header-bg" : "bg-bgCol"} ${isScrolling || (prevPosition <= 50) ? "" : " -translate-y-full"}`}>
             <div className='wrapper relative'>
                 <div className='flex items-center justify-between mx-3'>
                     {/* dropdown button for smaller devicesS */}

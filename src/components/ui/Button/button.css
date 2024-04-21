@@ -1,15 +1,31 @@
-.btn {
+.btn-default {
     transition: all 0.3s ease-in-out;
     box-shadow: 5px 5px 0 0 white;
 }
 
-.btn:hover {
+.btn-default:hover {
     transform: translateY(4px) translateX(2px);
     box-shadow: -5px -5px 0 0 #FF0052;
 }
 
 
-.btn:active {
+.btn-default:active {
     transform: translateY(2px) translateX(1px);
     box-shadow: 0 0 0 0 white;
+}
+
+.btn-secondery {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 0 0 #FF0052;
+}
+
+.btn-secondery:hover {
+    transform: translateY(4px) translateX(2px);
+    box-shadow: -5px -5px 0 0 white;
+}
+
+
+.btn-secondery:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 #FF0052;
 }
