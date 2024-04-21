@@ -10,7 +10,7 @@ const NavLinks = () => {
         { name: "Support", path: "/support" },
     ];
     return (
-        <div className='flex gap-5'>
+        <div className='flex flex-col md:flex-row gap-5'>
             {
                 navbarRoutes.map((route, indx) => <NavLink key={indx} href={route.path}>{route.name}</NavLink>)
             }

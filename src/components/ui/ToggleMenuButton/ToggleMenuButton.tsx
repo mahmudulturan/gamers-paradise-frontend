@@ -1,9 +1,10 @@
+"use state"
 import React from 'react';
 import './style.css';
-const ToggleMenuButton = () => {
+const ToggleMenuButton = ({ handleMenuToggler }: { handleMenuToggler: VoidFunction }) => {
     return (
         <div>
-            <input type="checkbox" id="checkbox" />
+            <input onChange={handleMenuToggler} type="checkbox" id="checkbox" />
             <label htmlFor="checkbox" className="toggle">
                 <div className="bars" id="bar1"></div>
                 <div className="bars" id="bar2"></div>
