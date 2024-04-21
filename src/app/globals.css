@@ -13,13 +13,6 @@ body {
   background-attachment: fixed;
 }
 
-.header-bg {
-  background-image: url("../assets/images/background/header-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
 @layer utilities {
   .wrapper {
