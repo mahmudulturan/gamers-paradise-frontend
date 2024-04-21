@@ -11,8 +11,10 @@ export interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorEleme
 const NavLink = ({ href, children, ...props }: NavLinkProps) => {
     const pathname = usePathname();
     return (
-        <Link className={`uppercase font-semibold hover:text-textCol duration-300 flex flex-col group 
-        relative  ${pathname === href && "border-b-2 border-primaryCol"}hover:border-b-2 border-primaryCol md:hover:border-b-0 md:border-b-0`} href={href} {...props}>
+        <Link className={`uppercase hover:text-textCol duration-300 flex flex-col group 
+        font-bold relative  
+        ${pathname === href && "border-b-2 border-primaryCol"} 
+        hover:border-b-2 border-primaryCol md:hover:border-b-0 md:border-b-0`} href={href} {...props}>
             <span className="px-1">
                 {children}
             </span>
