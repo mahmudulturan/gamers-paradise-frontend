@@ -6,6 +6,8 @@ import NavLinks from './NavLinks';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button/button';
 import ToggleMenuButton from '@/components/ui/ToggleMenuButton/ToggleMenuButton';
+import './navbar.css';
+
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -32,7 +34,7 @@ const Navbar = () => {
                         </div>
                         <Button>Login</Button>
                     </div>
-                    <div className={`absolute right-0 top-[70px] left-0 h-full w-full origin-left duration-300 ${isMenuOpen ? "scale-x-100" : "scale-x-0"}`}>
+                    <div className={`absolute right-0 top-[70px] left-0 z-20 min-h-screen w-full origin-left duration-300 ${isMenuOpen ? "scale-x-100" : "scale-x-0"} blur-background`}>
                         <NavLinks />
                     </div>
                 </div>
