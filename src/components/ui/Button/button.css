@@ -1,0 +1,15 @@
+.btn {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 0 0 white;
+}
+
+.btn:hover {
+    transform: translateY(4px) translateX(2px);
+    box-shadow: -5px -5px 0 0 #FF0052;
+}
+
+
+.btn:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 white;
+}
