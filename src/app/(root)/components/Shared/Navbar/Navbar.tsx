@@ -34,7 +34,7 @@ const Navbar = () => {
                         </div>
                         <Button>Login</Button>
                     </div>
-                    <div className={`absolute right-0 top-[70px] left-0 z-20 min-h-screen w-full origin-top duration-300 ${isMenuOpen ? "scale-y-100" : "scale-y-0"} blur-background`}>
+                    <div className={`absolute md:hidden right-0 top-[70px] left-0 z-20 w-[70%] max-w-72 mx-auto rounded-b-[8px] origin-top duration-300 ${isMenuOpen ? "scale-y-100" : "scale-y-0"} blur-background`}>
                         <NavLinks />
                     </div>
                 </div>
