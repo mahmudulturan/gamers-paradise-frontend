@@ -3,8 +3,8 @@ import './footer.css';
 import logo from '@/assets/images/logo/gamersParadiseLogo.png';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa6";
-import { CiLocationOn, CiMobile4, CiMail  } from "react-icons/ci";
+import { FaYoutube, FaInstagram, FaFacebook, FaChevronRight } from "react-icons/fa6";
+import { CiLocationOn, CiMobile4, CiMail } from "react-icons/ci";
 import { Input } from '@/components/ui/Input/input';
 import { Button } from '@/components/ui/Button/button';
 
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-            <section className='min-h-[40vh] wrapper flex items-center justify-between gap-6 py-12'>
+            <section className='min-h-[40vh] wrapper flex items-start justify-between gap-6 py-12'>
                 {/* footer logo start*/}
                 <div className='flex-1'>
                     <Link href={'/'}>
@@ -49,7 +49,25 @@ const Footer = () => {
 
                 {/* suggestions section start*/}
                 <div className='flex-1'>
-
+                    <h4 className='uppercase font-bold text-xl mb-4'>Help & Information</h4>
+                    <div className='space-y-2'>
+                        <div className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
+                            <FaChevronRight className='group-hover:text-textCol/80' />
+                            <span>About Us</span>
+                        </div>
+                        <div className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
+                            <FaChevronRight className='group-hover:text-textCol/80' />
+                            <span>Terms And Conditions</span>
+                        </div>
+                        <div className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
+                            <FaChevronRight className='group-hover:text-textCol/80' />
+                            <span>Return And Refund</span>
+                        </div>
+                        <div className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
+                            <FaChevronRight className='group-hover:text-textCol/80' />
+                            <span>Privacy Policy</span>
+                        </div>
+                    </div>
                 </div>
 
                 {/* newsletter section start */}
