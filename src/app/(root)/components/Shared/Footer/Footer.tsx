@@ -11,23 +11,23 @@ import { Button } from '@/components/ui/Button/button';
 const Footer = () => {
     return (
         <footer className='footer-bg'>
-            <section className=' border-b-[1px] border-[#FFFFFF1A] '>
-                <div className='wrapper border-x-[1px] border-[#FFFFFF1A] flex justify-between'>
-                    <div className='flex-1 py-10 px-6 flex items-center gap-2'>
+            <section className='border-b-[1px] border-[#FFFFFF1A] '>
+                <div className='wrapper border-x-[1px] border-[#FFFFFF1A] flex flex-col md:flex-row justify-between py-10 md:py-0'>
+                    <div className='flex-1 py-3 md:py-10 md:px-6 flex items-center gap-2'>
                         <CiMobile4 className='text-4xl' />
                         <span>Phone Number : +88017 548 8598 648</span>
                     </div>
-                    <div className='flex-1 py-10 px-6 border-x-[1px] border-[#FFFFFF1A] flex items-center gap-2'>
+                    <div className='flex-1 py-3 md:py-10 md:px-6 md:border-x-[1px] border-[#FFFFFF1A] flex items-center gap-2'>
                         <CiMail className='text-4xl' />
                         <span>Email : gamersparadise@gmail.com</span>
                     </div>
-                    <div className='flex-1 py-10 px-6 flex items-center gap-2r'>
+                    <div className='flex-1 py-3 md:py-10 md:px-6 flex items-center gap-2'>
                         <CiLocationOn className='text-4xl' />
                         <span>Address : House #80, North Badda, Dhaka 1212</span>
                     </div>
                 </div>
             </section>
-            <section className='min-h-[40vh] wrapper flex items-start justify-between gap-6 py-12'>
+            <section className='min-h-[40vh] wrapper flex flex-col md:flex-row items-start justify-between gap-6 py-12'>
                 {/* footer logo start*/}
                 <div className='flex-1'>
                     <Link href={'/'}>
