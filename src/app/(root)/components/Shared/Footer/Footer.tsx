@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/Button/button';
 const Footer = () => {
     return (
         <footer className='footer-bg'>
+            {/* address section start */}
             <section className='border-b-[1px] border-[#FFFFFF1A] '>
                 <div className='wrapper border-x-[1px] border-[#FFFFFF1A] flex flex-col md:flex-row justify-between py-10 md:py-0'>
                     <div className='flex-1 py-3 md:py-10 md:px-6 flex items-center gap-2'>
@@ -27,8 +28,11 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
+            {/* address section end */}
+
+            {/* details and speacial links section start */}
             <section className='min-h-[40vh] wrapper flex flex-col md:flex-row items-start justify-between gap-6 py-12'>
-                {/* footer logo start*/}
+                {/* footer logo and details start*/}
                 <div className='flex-1'>
                     <Link href={'/'}>
                         <Image className='w-24 md:w-32' src={logo} alt='logo of gamers paradise' />
@@ -46,8 +50,9 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
+                {/* footer logo and details end*/}
 
-                {/* suggestions section start*/}
+                {/* help and information section start*/}
                 <div className='flex-1'>
                     <h4 className='uppercase font-bold text-xl mb-4'>Help & Information</h4>
                     <div className='space-y-2'>
@@ -69,6 +74,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
+                {/* help and information section end*/}
 
                 {/* newsletter section start */}
                 <div className='flex-1 gap-4 space-y-4'>
@@ -80,10 +86,15 @@ const Footer = () => {
                     <Input placeholder='Your Email' className='w-full' />
                     <Button className='py-6 my-4' variant={"secondary"}>Send Message</Button>
                 </div>
+                {/* newsletter section start */}
             </section>
-            <section className='bg-seconderyCol py-8'>
+            {/* details and speacial links section end */}
+
+            {/* copyright section start */}
+            <section className='bg-seconderyCol py-6'>
                 <p className='text-center text-sm'>The <span>Trio Dev LTD.</span> © 2024 Trading as <span className='font-semibold'>Gamers Paradise</span>. All Rights Reserved.</p>
             </section>
+            {/* copyright section end */}
         </footer>
     );
 };
