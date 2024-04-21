@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import logo from '@/assets/images/logo/gamersParadiseLogo.png';
 import Image from 'next/image';
 import NavLinks from './NavLinks';
@@ -12,6 +12,8 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolling, setIsScrolling] = useState(false);
     const [prevPosition, setPrevPosition] = useState(0);
+    const menuRef = useRef<HTMLDivElement | null>(null);
+    const menuToggleButtonRef = useRef<HTMLButtonElement>(null);
 
     // scroll handler
     const onScroll = () => {
@@ -27,6 +29,13 @@ const Navbar = () => {
         setIsMenuOpen(pre => !pre);
     }
 
+    // user menu outside click handler
+    const handleClickOutside = (event: Event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target as Node) && menuToggleButtonRef.current && !menuToggleButtonRef.current.contains(event.target as Node)) {
+            setIsMenuOpen(false);
+        }
+    };
+
     // handle sideeffect for scroll
     useEffect(() => {
         window.addEventListener('scroll', onScroll);
@@ -35,14 +44,24 @@ const Navbar = () => {
         };
     }, [prevPosition]);
 
+    // menu outside click handler
+    useEffect(() => {
+        // Add the event listener when the component mounts
+        document.addEventListener("mousedown", handleClickOutside);
+        // Remove the event listener when the component unmounts
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     return (
         <div className={`sticky py-4 shadow-xl top-0 w-full z-40 duration-300 ${(prevPosition <= 50) ? "header-bg" : "bg-seconderyCol"} ${isScrolling || (prevPosition <= 50) ? "" : " -translate-y-full"}`}>
             <div className='wrapper relative'>
                 <div className='flex items-center justify-between mx-3'>
                     {/* dropdown button for smaller devicesS */}
                     <div className='md:hidden'>
-                        <span>
-                            <ToggleMenuButton handleMenuToggler={handleMenuToggler} />
+                        <span ref={menuToggleButtonRef}>
+                            <ToggleMenuButton isMenuOpen={isMenuOpen} handleMenuToggler={handleMenuToggler} />
                         </span>
                     </div>
 
@@ -62,7 +81,9 @@ const Navbar = () => {
                     </div>
 
                     {/* navlinks for smaller devices start */}
-                    <div className={`absolute md:hidden right-0 top-[70px] left-0 z-20 w-[70%] max-w-72 mx-auto rounded-b-[8px] origin-top duration-300 ${isMenuOpen ? "scale-y-100" : "scale-y-0"} blur-background ${isScrolling || (prevPosition <= 50) ? "" : " -translate-y-full"}`} >
+                    <div
+                        ref={menuRef}
+                        className={`absolute md:hidden right-0 top-[70px] left-0 z-20 w-[70%] max-w-72 mx-auto rounded-b-[8px] origin-top duration-300 ${isMenuOpen ? "scale-y-100" : "scale-y-0"} blur-background ${isScrolling || (prevPosition <= 50) ? "" : " -translate-y-full"}`} >
                         <NavLinks />
                     </div>
                 </div>
