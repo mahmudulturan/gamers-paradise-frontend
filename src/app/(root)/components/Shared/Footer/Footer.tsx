@@ -7,6 +7,7 @@ import { FaYoutube, FaInstagram, FaFacebook, FaChevronRight } from "react-icons/
 import { CiLocationOn, CiMobile4, CiMail } from "react-icons/ci";
 import { Input } from '@/components/ui/Input/input';
 import { Button } from '@/components/ui/Button/button';
+import { FaArrowCircleRight } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -84,7 +85,7 @@ const Footer = () => {
                     </p>
                     <Input placeholder='Your Name' className='w-full' />
                     <Input placeholder='Your Email' className='w-full' />
-                    <Button className='py-6 my-4' variant={"secondary"}>Send Message</Button>
+                    <Button className='py-6 my-4 gap-1' variant={"secondary"}>Send Message <FaArrowCircleRight className='text-lg' /></Button>
                 </div>
                 {/* newsletter section start */}
             </section>
