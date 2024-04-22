@@ -1,12 +1,14 @@
 import { Button } from '@/components/ui/Button/button';
 import { Input } from '@/components/ui/Input/input';
+import Link from 'next/link';
 import React from 'react';
+import SocialLogin from '../../components/SocialLogin';
 
 const LoginForm = () => {
     return (
-        <form>
-            <h6 className='text-3xl uppercase font-bold my-10 text-center'>Login</h6>
-            <div className='flex flex-col gap-5'>
+        <div>
+            <h6 className='text-3xl uppercase font-bold mb-10 text-center'>Login</h6>
+            <form className='flex flex-col gap-5'>
                 <div className='space-y-3'>
                     <Input className='bg-[#39406D] py-4 rounded-md' type='text' placeholder='Username or Email Address' />
                     <Input className='bg-[#39406D] py-4 rounded-md' type='password' placeholder='Password' />
@@ -19,8 +21,18 @@ const LoginForm = () => {
                     <span className='text-end underline cursor-pointer'>Forgot Password?</span>
                 </div>
                 <Button className='py-7 text-xl font-extrabold' variant={"secondary"}>Login</Button>
+            </form>
+            <div className='flex flex-col items-center justify-center gap-2'>
+                <p className='text-center my-4'>
+                    Don't Have any Account? <Link className='text-primaryCol font-medium underline' href={'/register'}>Sign Up</Link>
+                </p>
+                <span className="relative flex">
+                    <span className="animate-ping absolute h-full w-full rounded-full bg-primaryCol opacity-75"></span>
+                    <span className="relative inline-flex rounded-full bg-primaryCol px-2.5 py-2 uppercase">Or</span>
+                </span>
+                <SocialLogin />
             </div>
-        </form>
+        </div>
     );
 };
 
