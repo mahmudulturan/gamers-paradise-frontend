@@ -13,13 +13,7 @@ const RegisterForm = () => {
                     <Input className='bg-[#39406D] py-4 rounded-md' type='text' placeholder='Your Name' />
                     <Input className='bg-[#39406D] py-4 rounded-md' type='email' placeholder='Email Address' />
                     <Input className='bg-[#39406D] py-4 rounded-md' type='password' placeholder='Password' />
-                </div>
-                <div className='w-full flex justify-between font-medium'>
-                    <div className='flex items-center gap-2'>
-                        <input className='h-4 w-4' type="checkbox" name="rememberme" id="rememberme" />
-                        <label htmlFor="rememberme">Remember Me</label>
-                    </div>
-                    <span className='text-end underline cursor-pointer'>Forgot Password?</span>
+                    <Input className='bg-[#39406D] py-4 rounded-md' type='password' placeholder='Re-Type Password' />
                 </div>
                 <Button className='py-7 text-xl font-extrabold' variant={"secondary"}>Register</Button>
             </form>
