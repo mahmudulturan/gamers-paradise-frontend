@@ -30,7 +30,7 @@ const WhoWeAre = () => {
 
 
     return (
-        <div className='wrapper flex flex-col md:flex-row justify-center gap-10 my-20'>
+        <div className='wrapper flex flex-col md:flex-row justify-center gap-10 mt-20'>
             {/* who we are image part */}
             <div className='flex-1'>
                 <Image src={wwaImage} className='' alt='Image of who we are section' />

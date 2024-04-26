@@ -14,7 +14,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: ITestimonial }) => {
                         <p className='uppercase font-medium text-base'>{testimonial.gameName}</p>
                     </div>
                 </div>
-                <Image className='w-16' src={testimonial.gameLogo} alt={`logo of ${testimonial.gameName}`} />
+                <Image className='w-16 hidden md:block' src={testimonial.gameLogo} alt={`logo of ${testimonial.gameName}`} />
             </div>
             <hr className='my-6 border-[#FFFFFF1A]' />
             <div>
