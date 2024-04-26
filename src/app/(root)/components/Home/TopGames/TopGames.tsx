@@ -1,41 +1,11 @@
 import React from 'react';
 import SectionHeading from '../../Shared/SectionHeading/SectionHeading';
-import codLogo from '@/assets/images/home/top-games/codm-wl_178x178.jpg'
-import fcLogo from '@/assets/images/home/top-games/fc_mobile_tile.jpg'
-import ffLogo from '@/assets/images/home/top-games/free_fire_new_tile.png'
-import mlbbLogo from '@/assets/images/home/top-games/mlbb_tile_apr2024.png'
-import pubgLogo from '@/assets/images/home/top-games/pubgm_rps_tile.jpg'
 import GameCard from './GameCard';
 import { topGames } from '@/constants/constants';
+import { Button } from '@/components/ui/Button/button';
+import { FaCircleArrowRight } from "react-icons/fa6";
 
 const TopGames = () => {
-    const games = [
-        {
-            name: "EA SPORTS FC Mobile",
-            logo: fcLogo,
-            route: "/ea-sports-fc-mobile"
-        },
-        {
-            name: "PUBG Mobile",
-            logo: pubgLogo,
-            route: "/pubg-mobile"
-        },
-        {
-            name: "Mobile Legends",
-            logo: mlbbLogo,
-            route: "/mobile-legends"
-        },
-        {
-            name: "Free Fire",
-            logo: ffLogo,
-            route: "/free-fire"
-        },
-        {
-            name: "Call of Duty",
-            logo: codLogo,
-            route: "/call-of-duty"
-        }
-    ];
 
 
     return (
@@ -45,6 +15,9 @@ const TopGames = () => {
                 {
                     topGames.map((game, indx) => <GameCard key={indx} game={game} />)
                 }
+            </div>
+            <div className='flex items-center justify-center my-12'>
+                <Button className='py-7 gap-2' variant={"secondary"}>Browse All Games <FaCircleArrowRight className='text-xl' /></Button>
             </div>
             <hr className='border-[#FFFFFF1A] my-20' />
         </div>
