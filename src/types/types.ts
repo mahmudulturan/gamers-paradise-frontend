@@ -5,3 +5,13 @@ export interface IGame {
     logo: StaticImageData;
     route: string;
 }
+
+export interface ITestimonial {
+    image: StaticImageData;
+    name: string;
+    gameName: string;
+    gameLogo: StaticImageData;
+    reviewText: string;
+    rating: number;
+  }
+  
