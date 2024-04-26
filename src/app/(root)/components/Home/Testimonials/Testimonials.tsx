@@ -12,6 +12,7 @@ const Testimonials = () => {
     return (
         <div className='testimonials-bg min-h-[] wrapper py-20'>
             <SectionHeading heading='What Our Gamers Say' subheading='Voices of Our Community' className='my-0' />
+            {/* all testimonials carousel start */}
             <div className='my-8'>
                 <Swiper
                     navigation={true}
@@ -30,6 +31,7 @@ const Testimonials = () => {
                     }
                 </Swiper>
             </div>
+            {/* all testimonials carousel end */}
         </div>
     );
 };

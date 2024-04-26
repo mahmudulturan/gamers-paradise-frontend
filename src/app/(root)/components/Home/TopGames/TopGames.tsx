@@ -9,11 +9,13 @@ const TopGames = () => {
     return (
         <div className='wrapper'>
             <SectionHeading heading='Top Games Collection' subheading="Today's" className='py-12 my-0' />
+            {/* top games start */}
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 lg:gap-8 xl:gap-10'>
                 {
                     topGames.map((game, indx) => <GameCard key={indx} game={game} />)
                 }
             </div>
+            {/* top games end */}
             <div className='flex items-center justify-center my-12'>
                 <Button className='md:py-7 px-3 md:px-7 gap-2' variant={"secondary"}>Browse All Games <FaCircleArrowRight className='text-xl' /></Button>
             </div>
