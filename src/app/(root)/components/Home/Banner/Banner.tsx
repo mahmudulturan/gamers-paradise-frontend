@@ -6,7 +6,7 @@ import HighlightedFeature from './HighlightedFeature';
 
 const Banner = () => {
     return (
-        <div className='relative'>
+        <div className='relative mb-[450px] md:mb-[120px]'>
             <div className='min-h-[75vh] banner-bg relative z-10'>
                 <div className='absolute h-full w-full bg-seconderyCol/70'>
                     <div className='wrapper flex items-center justify-between min-h-[75vh] -mt-10 px-2 lg:px-0'>
