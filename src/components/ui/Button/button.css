@@ -1,6 +1,6 @@
 .btn-default {
     transition: all 0.3s ease-in-out;
-    box-shadow: 5px 5px 0 0 white;
+    box-shadow: 7px 7px 0 0 white;
 }
 
 .btn-default:hover {
@@ -16,12 +16,12 @@
 
 .btn-secondery {
     transition: all 0.3s ease-in-out;
-    box-shadow: 5px 5px 0 0 #FF0052;
+    box-shadow: 7px 7px 0 0 #FF0052;
 }
 
 .btn-secondery:hover {
     transform: translateY(4px) translateX(2px);
-    box-shadow: -5px -5px 0 0 white;
+    box-shadow: -7px -7px 0 0 white;
 }
 
 
