@@ -77,7 +77,9 @@ const Navbar = () => {
                         <div className='hidden md:block'>
                             <NavLinks />
                         </div>
-                        <Button>Login</Button>
+                        <Link href={'/login'}>
+                            <Button>Login</Button>
+                        </Link>
                     </div>
 
                     {/* navlinks for smaller devices start */}
