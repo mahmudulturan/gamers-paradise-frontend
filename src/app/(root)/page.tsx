@@ -7,7 +7,7 @@ const HomePage = () => {
         <div>
             <Banner />
             <TopGames />
-            <div className="min-h-screen"></div>
+            {/* <div className="min-h-screen"></div> */}
             {/* <div className="min-h-screen"></div>
             <div className="min-h-screen"></div> */}
         </div>
