@@ -9,7 +9,7 @@ const GameCard = ({ game }: { game: IGame }) => {
             <div className='overflow-hidden sm:w-40'>
                 <Image className='w-full group-hover:scale-105 group-hover:rotate-1 group-hover:saturate-150 transition-all duration-300 ' alt={`logo of ${game.name}`} src={game.logo} />
             </div>
-            <h3 className='uppercase font-bold md:text-xl text-center'>{game.name}</h3>
+            <h3 className='uppercase font-bold md:text-xl text-center flex-1'>{game.name}</h3>
         </Link>
     );
 };

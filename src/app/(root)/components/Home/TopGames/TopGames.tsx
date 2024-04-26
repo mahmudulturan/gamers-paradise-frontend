@@ -15,7 +15,7 @@ const TopGames = () => {
                 }
             </div>
             <div className='flex items-center justify-center my-12'>
-                <Button className='py-7 gap-2' variant={"secondary"}>Browse All Games <FaCircleArrowRight className='text-xl' /></Button>
+                <Button className='md:py-7 px-3 md:px-7 gap-2' variant={"secondary"}>Browse All Games <FaCircleArrowRight className='text-xl' /></Button>
             </div>
             <hr className='border-[#FFFFFF1A] my-20' />
         </div>
