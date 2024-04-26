@@ -30,14 +30,14 @@ const WhoWeAre = () => {
 
 
     return (
-        <div className='wrapper flex flex-col md:flex-row justify-center gap-10 mt-20'>
+        <div className='wrapper flex flex-col md:flex-row items-center justify-center gap-10 mt-20'>
             {/* who we are image part */}
             <div className='flex-1'>
                 <Image src={wwaImage} className='' alt='Image of who we are section' />
             </div>
             {/* who we are details part start */}
             <div className='flex-1'>
-                <SectionHeading className='text-left items-start py-0 mb-6' heading='We Are Trusted Game Shop' subheading='WHO WE ARE'></SectionHeading>
+                <SectionHeading className='md:text-left md:items-start py-0 mb-6' heading='We Are Trusted Game Shop' subheading='WHO WE ARE'></SectionHeading>
                 <p>A trusted game shop, fueled by our success, passionately dedicated to delivering exceptional gaming experiences through our mission-driven approach.</p>
                 <div className='flex flex-col justify-center items-start gap-3 my-3 md:my-6'>
                     {
