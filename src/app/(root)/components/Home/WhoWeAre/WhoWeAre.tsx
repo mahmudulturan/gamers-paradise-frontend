@@ -27,7 +27,7 @@ const WhoWeAre = () => {
 
 
     return (
-        <div className='wrapper flex justify-center gap-10 min-h-screen my-20'>
+        <div className='wrapper flex justify-center gap-10 my-20'>
             <div className='flex-1'>
                 <Image src={wwaImage} className='' alt='Image of who we are section' />
             </div>
@@ -38,7 +38,7 @@ const WhoWeAre = () => {
                     {
                         features.map((feature, indx) => <div key={indx} className="flex duration-300 flex-1 w-full rounded-md items-center justify-start gap-4 py-4 hover:drop-shadow-2xl select-none group">
                             <div className='rounded-full relative'>
-                                <span className="group-hover:animate-ping absolute h-full w-full duration-150 transition-all rounded-full bg-seconderyCol opacity-0 group-hover:opacity-75"></span>
+                                <span className="group-hover:animate-ping absolute h-full w-full -z-10 duration-150 transition-all rounded-full bg-seconderyCol opacity-0 group-hover:opacity-75"></span>
                                 {feature.icon}
                             </div>
                             <div>
