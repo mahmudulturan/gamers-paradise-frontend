@@ -95,7 +95,7 @@ const SelectItems = () => {
             </div>
             <div className='my-6'>
                 <h3 className='text-center text-xl font-medium uppercase'>UC Topup</h3>
-                <div className='grid grid-cols-4 gap-6 my-6'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-6'>
                     {topUpItems.map((item, indx) =>
                         <div key={indx}
                             className='bg-textCol hover:bg-primaryCol hover:text-textCol text-seconderyCol px-3 py-2 rounded-md cursor-pointer duration-300 flex'>
@@ -113,12 +113,12 @@ const SelectItems = () => {
             </div>
             <div className='my-6'>
                 <h3 className='text-center text-xl font-medium uppercase'>Membership</h3>
-                <div className='grid grid-cols-4 gap-6 my-6'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-6'>
                     {membership.map((item, indx) =>
                         <div key={indx}
                             className='bg-textCol hover:bg-primaryCol hover:text-textCol text-seconderyCol px-3 py-2 rounded-md cursor-pointer duration-300 flex'>
                             <h4 className='text-2xl font-semibold'>{item.uc}<br /></h4>
-                            <div className='flex items-end flex-col justify-between my-1'>
+                            <div className='flex items-end flex-col justify-between my-1 flex-1'>
                                 <h5 className='text-xl font-bold'>{item.discountedPrice}$</h5>
                                 <div className='flex items-center justify-end gap-1'>
                                     <h5 className='text-xs'>{item.discountPercentage}%</h5>

@@ -28,7 +28,7 @@ const Checkout = () => {
                     </div>
                     <div className='flex justify-start gap-1'>
                         <input type='checkbox' id='subscribe' />
-                        <label className='cursor-pointer' htmlFor="subscribe">Yes, send me messages with exclusive Codashop news and promotions.</label>
+                        <label className='cursor-pointer' htmlFor="subscribe">Yes, send me messages with exclusive Gamers Paradise news and promotions.</label>
                     </div>
                 </div>
                 <div className='flex justify-end w-full'>

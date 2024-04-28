@@ -5,7 +5,7 @@ import { SiFastapi } from "react-icons/si";
 import { RiSecurePaymentLine } from "react-icons/ri";
 const GameInfo = () => {
     return (
-        <div className='max-w-lg px-4 flex flex-col'>
+        <div className='md:max-w-lg px-4 flex flex-col'>
             <Image src={pubgBanner} alt='Image of pubg banner' />
             <h4 className='text-2xl font-bold my-3'>PUBG Mobile UC</h4>
             <div className='flex items-center gap-3 mb-3'>
