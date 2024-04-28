@@ -3,6 +3,7 @@ import React from 'react';
 import SelectItems from './components/SelectItems/SelectItems';
 import GameInfo from './components/GameInfo/GameInfo';
 import PaymentInfo from './components/PaymentInfo/PaymentInfo';
+import GameIdInfo from './components/GameIdInfo/GameIdInfo';
 
 const page = () => {
 
@@ -14,6 +15,7 @@ const page = () => {
             <div className='max-w-5xl w-full space-y-8'>
                 <SelectItems />
                 <PaymentInfo />
+                <GameIdInfo />
             </div>
         </div>
     );

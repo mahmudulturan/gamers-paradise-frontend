@@ -129,7 +129,7 @@ const SelectItems = () => {
                     )}
                 </div>
             </div>
-            <hr />
+            <hr className='border-[#FFFFFF1A]' />
             <div className='my-6'>
                 <h3 className='text-center text-xl font-medium uppercase'>Total Payable Amount: 350$</h3>
             </div>
