@@ -4,6 +4,7 @@ import SelectItems from './components/SelectItems/SelectItems';
 import GameInfo from './components/GameInfo/GameInfo';
 import PaymentInfo from './components/PaymentInfo/PaymentInfo';
 import GameIdInfo from './components/GameIdInfo/GameIdInfo';
+import Checkout from './components/Checkout/Checkout';
 
 const page = () => {
 
@@ -16,6 +17,7 @@ const page = () => {
                 <SelectItems />
                 <PaymentInfo />
                 <GameIdInfo />
+                <Checkout />
             </div>
         </div>
     );
