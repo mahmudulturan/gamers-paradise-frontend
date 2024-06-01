@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/Button/button';
 import { Input } from '@/components/ui/Input/input';
+import Link from 'next/link';
 import React from 'react';
 
 const Checkout = () => {
@@ -24,7 +25,8 @@ const Checkout = () => {
                     <div className='flex justify-start gap-1'>
                         <input type='checkbox' id='accept_terms' />
                         <label className='cursor-pointer' htmlFor="accept_terms">
-                            I accept all <span className='underline text-primaryCol cursor-pointer'>terms and conditions</span> and <span className='underline text-primaryCol cursor-pointer'>refund policy</span>.</label>
+                            I accept
+                            all <Link href={'/terms-condition'} target='_blank' className='underline text-primaryCol cursor-pointer'>terms and conditions</Link> and <Link href={'/refund-policy'} target='_blank' className='underline text-primaryCol cursor-pointer'>refund policy</Link>.</label>
                     </div>
                     <div className='flex justify-start gap-1'>
                         <input type='checkbox' id='subscribe' />

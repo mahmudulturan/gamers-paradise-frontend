@@ -61,14 +61,14 @@ const Footer = () => {
                             <FaChevronRight className='group-hover:text-textCol/80' />
                             <span>About Us</span>
                         </div>
-                        <div className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
+                        <Link href={'/terms-condition'} className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
                             <FaChevronRight className='group-hover:text-textCol/80' />
                             <span>Terms And Conditions</span>
-                        </div>
-                        <div className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
+                        </Link>
+                        <Link href={'/refund-policy'} className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
                             <FaChevronRight className='group-hover:text-textCol/80' />
                             <span>Return And Refund</span>
-                        </div>
+                        </Link>
                         <div className='group hover:text-textCol/80 cursor-pointer flex items-center gap-2'>
                             <FaChevronRight className='group-hover:text-textCol/80' />
                             <span>Privacy Policy</span>
